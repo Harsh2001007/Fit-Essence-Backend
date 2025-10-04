@@ -6,6 +6,9 @@ const exerciseSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        videoUrl:{
+            type: String,
+        },
         difficulty: {
             type: String,
             enum: ["beginner", "intermediate", "advanced"], // optional restriction

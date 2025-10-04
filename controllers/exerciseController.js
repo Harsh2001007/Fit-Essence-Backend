@@ -33,6 +33,7 @@ exports.getExercises = async (req, res) => {
             image: ex.image,
             isActive: ex.isActive,
             name: ex.name,
+            videoUrl: ex.videoUrl,
         }));
 
         res.status(200).json({
@@ -73,6 +74,7 @@ exports.getExerciseById = async (req, res) => {
             image: exercise.image,
             isActive: exercise.isActive,
             name: exercise.name,
+            videoUrl: exercise.videoUrl,
         };
 
         res.status(200).json({
